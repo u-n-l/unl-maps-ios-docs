@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Structures Reference</title>
+  <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta charset="utf-8">
+  <script src="js/jquery.min.js" defer></script>
+  <script src="js/jazzy.js" defer></script>
+
+  <script src="js/lunr.min.js" defer></script>
+  <script src="js/typeahead.jquery.js" defer></script>
+  <script src="js/jazzy.search.js" defer></script>
+  <meta class="swiftype" name="type" data-type="enum" content="Mapbox Reference" />
+  <meta class="swiftype" name="title" data-type="string" content="Structures" />
+  <style type="text/css">
+    /* .nav-group-name[data-name="Maps"]>.small-heading,
+    .nav-group-task[data-name="Maps"] {
+      background-color: #f5f8fc;
+      font-family: "Open Sans Bold";
+      border-left: 3px solid #3a68d8;
+      padding-left: 5px
+    } */
+  </style>
+</head>
+
+<body>
+
+  <a name="//apple_ref/objc/Section/Structures" class="dashAnchor"></a>
+
+  <a title="Structures  Reference"></a>
+
+  <header class="header-container">
+    <div class="limiter">
+      <div class="header">
+        <p class="header-col header-col--primary">
+          <a class="header-link" href="index.html">
+            <img style="height: 25px;" class="header-icon"
+              src="https://2nm493.n3cdn1.secureserver.net/wp-content/uploads/2021/04/UNL-logo-new_white.png?time=1671101468"
+              alt="Mapbox Docs" />
+            <span class='header-tag'>UNL Structures SDK for iOS Reference</span>
+          </a>
+
+        </p>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- <div class="breadcrumbs">
+    <div class="limiter">
+      <a class="breadcrumb" href="index.html">Structures Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Structures Reference
+    </div>
+  </div> -->
+
+  <div class="content-wrapper limiter">
+    <nav class="navigation pe12-mm">
+      <div class="mb6 border-b border--darken10">
+        <div class="mb6">
+          <div class="dr-ui--product-menu">
+            <a href="#" class="txt-fancy txt-l block color-blue-on-hover">UNL iOS Sdk
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-col--secondary py12-mm">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead
+            class="w-full mb-0 bg-transparent border-4">
+        </form>
+      </div>
+      <ul class="nav-groups">
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full "
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 txt-17 color-darken75"
+            href="index.html">Getting Started</a>
+        </li>
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 color-darken75"
+            href="authentication.html">AUTHENTICATION</a>
+        </li>
+        <li class="nav-group-name py3-mm txt-uppercase txt-fancy round-full w-full" data-name="Appendices">
+          <div
+            class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main txt-17"
+            id="api-ref">
+            <a href="Appendices.html" class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm">API
+              Reference</a>
+            <button class="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+              aria-label="Toggle API Reference menu" aria-controls="menu-api-reference" aria-expanded="true">
+              <img src="./img/arrow-down.png" height="12px" />
+            </button>
+          </div>
+          <ul id="menu-drop-list" class="nav-group-tasks px12 py3-mm txt-fancy txt-17 txt-l menu-drop-list">
+            <li class="nav-group-task" data-name="Appendices" data-url="Appendices.html">
+              <a title="Appendices" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Appendices.html">Appendices</a>
+            </li>
+            <li class="nav-group-task" data-name="Maps" data-url="Maps.html">
+              <a title="Working with GeoJSON Data" class="av-group-task-link color-darken50 color-blue-on-hover"
+                href="Maps.html">Maps</a>
+            </li>
+            <li class="nav-group-task" data-name="Primitive Shapes" data-url="primitive-shape.html">
+              <a title="Primitive Shapes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="primitive-shape.html">Primitive Shapes</a>
+            </li>
+            <li class="nav-group-task" data-name="Annotations" data-url="Annotations.html">
+              <a title="Annotations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Annotations.html">Annotations</a>
+            </li>
+            <li class="nav-group-task" data-name="User Interaction" data-url="User-Interaction.html">
+              <a title="User Interaction" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="User-Interaction.html">User Interaction</a>
+            </li>
+            <li class="nav-group-task" data-name="Location Updates" data-url="Location-Updates.html">
+              <a title="Location Updates" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Location-Updates.html">Location Updates</a>
+            </li>
+            <li class="nav-group-task" data-name="Styling the Map" data-url="customizing-fonts.html">
+              <a title="Styling the Map" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="customizing-fonts.html">Styling the Map</a>
+            </li>
+            <li class="nav-group-task" data-name="Style Primitives" data-url="infoplist-keys.html">
+              <a title="Style Primitives" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="infoplist-keys.html">Style Primitives</a>
+            </li>
+            <li class="nav-group-task" data-name="Style Content" data-url="Style Content.html">
+              <a title="Style Content" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Style Content.html">Style Content</a>
+            </li>
+            <li class="nav-group-task" data-name="Style Layers" data-url="Style Layers.html">
+              <a title="Style Layers" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Style Layers.html">Style Layers</a>
+            </li>
+            <li class="nav-group-task" data-name="Offline Maps" data-url="Offline Maps.html">
+              <a title="Offline Maps" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Offline Maps.html">Offline Maps</a>
+            </li>
+            <li class="nav-group-task" data-name="Geometry" data-url="Geometry.html">
+              <a title="Geometry" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Geometry.html">Geometry</a>
+            </li>
+            <li class="nav-group-task" data-name="Formatters" data-url="Formatters.html">
+              <a title="Formatters" class="nav-group-task-link color-darken50 color-blue-on-hover"
+                href="Formatters.html">Formatters</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Categories" data-url="Other Categories.html">
+              <a title="Other Categories" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Categories.html">Other Categories</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Classes" data-url="Other Classes.html">
+              <a title="Other Classes" class="nav-group-task-link color-blue-on-hover " href="Other Classes.html">Other
+                Classes</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Constants" data-url="Other Constants.html">
+              <a title="Other Constants" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Constants.html">Other Constants</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Enumerations" data-url="Other Enums.html">
+              <a title="Other Enumerations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Enums.html">Other Enumerations</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Protocols" data-url="Other Protocols.html">
+              <a title="Other Protocols" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Protocols.html">Other Protocols</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Type Definitions" data-url="Other Type Definitions.html">
+              <a title="Other Type Definitions" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Type Definitions.html">Other Type Definitions</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Functions" data-url="Other Functions.html">
+              <a title="Other Functions" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Functions.html">Other Functions</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Structures" data-url="Other Structs.html">
+              <a title="Other Structures" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Structs.html">Other Structures</a>
+            </li>
+            <li class="nav-group-task" data-name="Classes" data-url="Classes.html">
+              <a title="Classes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Classes.html">Classes</a>
+            </li>
+            <li class="nav-group-task" data-name="Enumerations" data-url="Enums.html">
+              <a title="Enumerations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Enums.html">Enumerations</a>
+            </li>
+            <li class="nav-group-task" data-name="Protocols" data-url="Protocols.html">
+              <a title="Protocols" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Protocols.html">Protocols</a>
+            </li>
+            <li class="nav-group-task" data-name="Structures" data-url="Structs.html">
+              <a title="Structures" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Structs.html">Structures</a>
+            </li>
+          </ul>
+          <!-- <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 color-darken75" href="#">UNL
+            Plugins</a>
+        </li> -->
+        <li
+          class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint "
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 "
+            href="examples.html">Examples</a>
+        </li>
+
+
+      </ul>
+    </nav>
+    <div class="main-content">
+      <div class="breadcrumbs bg-transparent pb-12 pt-3 border-0">
+        <div class="limiter">
+          <a class="breadcrumb link" href="index.html">UNL iOS SDK</a>
+          <img class="carat" src="img/carat.png" />
+          <span class="breadcrumb color-gray none inline-block-mm">Examples</span>
+        </div>
+      </div>
+
+      <section class="section" id="docs-content">
+        <div class="section-content">
+          <div class="col prose col--8-mxl col--12">
+            <h1 class="txt-fancy">Download Sample Code</h1>
+          </div>
+
+          <div class="grid grid--gut60 ">
+
+
+            <div class="col col--12 prose">
+
+              <!-- CellFeature -->
+              <div class="">
+                <div class="">
+
+                  <div>
+                    <div class="">
+                      <h2 style="padding: 10px 0;">You can download our sample code from Github</h2>
+
+                      <a style="color: #314ccd; border-bottom: 1px solid #314ccd;"
+                        href="https://github.com/u-n-l/unl-sdk-sample-apps/tree/main/ios">Open Github Repository</a>
+                      <div>
+                        <br>
+
+                      </div>
+
+                      <div>
+                        <p>You need to replace the VPM and API Key which you created from UNL Studio</p><br>
+                        let KEY_API = "< UNL_API_KEY>" <br />
+                          let ID_VPM = "< UNL_VPM_ID>"
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+  <!-- <div class="footer limiter">
+    <p><a class="link" href="https://github.com/maplibre/maplibre-gl-native/blob/main/platform/ios/LICENSE.md"
+        target="_blank" rel="external noopener">License</a></p> Generated by <a class="link"
+      href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.3</a>, a <a class="link"
+      href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+    </div> -->
+</body>
+
+
+</html>

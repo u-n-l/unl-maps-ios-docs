@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Maps Reference</title>
+  <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta charset="utf-8">
+  <script src="js/jquery.min.js" defer></script>
+  <script src="js/jazzy.js" defer></script>
+
+  <script src="js/lunr.min.js" defer></script>
+  <script src="js/typeahead.jquery.js" defer></script>
+  <script src="js/jazzy.search.js" defer></script>
+  <meta class="swiftype" name="type" data-type="enum" content="Mapbox Reference" />
+  <meta class="swiftype" name="title" data-type="string" content="User Interaction" />
+  <style type="text/css">
+    /* .nav-group-name[data-name="Maps"]>.small-heading,
+    .nav-group-task[data-name="Maps"] {
+      background-color: #f5f8fc;
+      font-family: "Open Sans Bold";
+      border-left: 3px solid #3a68d8;
+      padding-left: 5px
+    } */
+  </style>
+</head>
+
+<body>
+
+  <a name="//apple_ref/objc/Section/User-Interaction" class="dashAnchor"></a>
+
+  <a title="User Interaction  Reference"></a>
+
+  <header class="header-container">
+    <div class="limiter">
+      <div class="header">
+        <p class="header-col header-col--primary">
+          <a class="header-link" href="index.html">
+            <img style="height: 25px;" class="header-icon"
+              src="https://2nm493.n3cdn1.secureserver.net/wp-content/uploads/2021/04/UNL-logo-new_white.png?time=1671101468"
+              alt="Mapbox Docs" />
+            <span class='header-tag'>UNL User Interaction SDK for iOS Reference</span>
+          </a>
+
+        </p>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- <div class="breadcrumbs">
+    <div class="limiter">
+      <a class="breadcrumb" href="index.html">User Interaction Reference</a>
+      <img class="carat" src="img/carat.png" />
+      User Interaction Reference
+    </div>
+  </div> -->
+
+  <div class="content-wrapper limiter">
+    <nav class="navigation pe12-mm">
+      <div class="mb6 border-b border--darken10">
+        <div class="mb6">
+          <div class="dr-ui--product-menu">
+            <a href="#" class="txt-fancy txt-l block color-blue-on-hover">UNL iOS Sdk
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-col--secondary py12-mm">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead
+            class="w-full mb-0 bg-transparent border-4">
+        </form>
+      </div>
+      <ul class="nav-groups">
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full "
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 txt-17 color-darken75"
+            href="index.html">Getting Started</a>
+        </li>
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 color-darken75"
+            href="authentication.html">AUTHENTICATION</a>
+        </li>
+        <li class="nav-group-name py3-mm txt-uppercase txt-fancy round-full w-full" data-name="Appendices">
+          <div
+            class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main txt-17 bg-blue-faint color-blue"
+            id="api-ref">
+            <a href="Appendices.html" class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm">API
+              Reference</a>
+            <button class="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+              aria-label="Toggle API Reference menu" aria-controls="menu-api-reference" aria-expanded="true">
+              <img src="./img/arrow-down.png" height="12px" />
+            </button>
+          </div>
+          <ul id="menu-drop-list" class="nav-group-tasks px12 py3-mm txt-fancy txt-17 txt-l menu-drop-list"
+            style="display:block">
+            <li class="nav-group-task" data-name="Appendices" data-url="Appendices.html">
+              <a title="Appendices" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Appendices.html">Appendices</a>
+            </li>
+            <li class="nav-group-task" data-name="Maps" data-url="Maps.html">
+              <a title="Working with GeoJSON Data" class="nav-group-task-link color-darken50 color-blue-on-hover"
+                href="Maps.html">Maps</a>
+            </li>
+            <li class="nav-group-task" data-name="Primitive Shapes" data-url="primitive-shape.html">
+              <a title="Primitive Shapes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="primitive-shape.html">Primitive Shapes</a>
+            </li>
+            <li class="nav-group-task" data-name="Annotations" data-url="Annotations.html">
+              <a title="Annotations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Annotations.html">Annotations</a>
+            </li>
+            <li class="nav-group-task" data-name="User Interaction" data-url="User-Interaction.html">
+              <a title="User Interaction" class="nav-group-task-link color-blue color-blue-on-hover "
+                href="User-Interaction.html">User Interaction</a>
+            </li>
+            <li class="nav-group-task" data-name="Location Updates" data-url="Location-Updates.html">
+              <a title="Location Updates" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Location-Updates.html">Location Updates</a>
+            </li>
+            <li class="nav-group-task" data-name="Styling the Map" data-url="Styling The Map.html">
+              <a title="Styling the Map" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Styling The Map.html">Styling the Map</a>
+            </li>
+            <li class="nav-group-task" data-name="Style Primitives" data-url="Style Primitives.html">
+              <a title="Style Primitives" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Style Primitives.html">Style Primitives</a>
+            </li>
+            <li class="nav-group-task" data-name="Style Content" data-url="Style Content.html">
+              <a title="Style Content" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Style Content.html">Style Content</a>
+            </li>
+            <li class="nav-group-task" data-name="Style Layers" data-url="Style Layers.html">
+              <a title="Style Layers" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Style Layers.html">Style Layers</a>
+            </li>
+            <li class="nav-group-task" data-name="Offline Maps" data-url="Offline Maps.html">
+              <a title="Offline Maps" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Offline Maps.html">Offline Maps</a>
+            </li>
+            <li class="nav-group-task" data-name="Geometry" data-url="Geometry.html">
+              <a title="Geometry" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Geometry.html">Geometry</a>
+            </li>
+            <li class="nav-group-task" data-name="Formatters" data-url="Formatters.html">
+              <a title="Formatters" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Formatters.html">Formatters</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Categories" data-url="Other Categories.html">
+              <a title="Other Categories" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Categories.html">Other Categories</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Classes" data-url="Other Classes.html">
+              <a title="Other Classes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Classes.html">Other Classes</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Constants" data-url="Other Constants.html">
+              <a title="Other Constants" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Constants.html">Other Constants</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Enumerations" data-url="Other Enums.html">
+              <a title="Other Enumerations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Enums.html">Other Enumerations</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Protocols" data-url="Other Protocols.html">
+              <a title="Other Protocols" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Protocols.html">Other Protocols</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Type Definitions" data-url="Other Type Definitions.html">
+              <a title="Other Type Definitions" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Type Definitions.html">Other Type Definitions</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Functions" data-url="Other Functions.html">
+              <a title="Other Functions" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Functions.html">Other Functions</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Structures" data-url="Other Structs.html">
+              <a title="Other Structures" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Structs.html">Other Structures</a>
+            </li>
+            <li class="nav-group-task" data-name="Classes" data-url="Classes.html">
+              <a title="Classes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Classes.html">Classes</a>
+            </li>
+            <li class="nav-group-task" data-name="Enumerations" data-url="Enums.html">
+              <a title="Enumerations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Enums.html">Enumerations</a>
+            </li>
+            <li class="nav-group-task" data-name="Protocols" data-url="Protocols.html">
+              <a title="Protocols" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Protocols.html">Protocols</a>
+            </li>
+            <li class="nav-group-task" data-name="Structures" data-url="Structs.html">
+              <a title="Structures" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Structs.html">Structures</a>
+            </li>
+          </ul>
+
+        </li>
+        <!-- <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 color-darken75" href="#">UNL
+            Plugins</a>
+        </li> -->
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 color-darken75"
+            href="examples.html">Examples</a>
+        </li>
+
+
+      </ul>
+    </nav>
+    <div class="main-content">
+      <div class="breadcrumbs bg-transparent pb-12 pt-3 border-0">
+        <div class="limiter">
+          <a class="breadcrumb link" href="index.html">UNL iOS SDK</a>
+          <img class="carat" src="img/carat.png" />
+          <span class="breadcrumb color-gray none inline-block-mm">API REFERENCE</span>
+          <img class="carat" src="img/carat.png" />
+          <span class="breadcrumb color-gray none inline-block-mm">User Interaction</span>
+        </div>
+      </div>
+
+      <div class="section" id="docs-content">
+        <div class="section-content">
+          <div class="col prose col--8-mxl col--12">
+            <h1 class="txt-fancy">User Interaction</h1>
+          </div>
+
+          <div class="grid grid--gut60 ">
+            <div class="dr-ui--page-layout-aside col col--12 col--4-mxl ms-60">
+              <aside data-swiftype-index="false" class="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                style="top:10px">
+                <nav aria-labelledby="on-this-page" class="dr-ui--on-this-page mb36-mxl mb18">
+                  <h2 id="on-this-page" class="unprose txt-m txt-bold mb6">On this page</h2>
+                  <ul class="scrollitem">
+                    <li class="mb3 mb6-mxl"><a href="#MGLCalloutView" class="link inline-block link--blue"
+                        style="word-break: break-word;">MGLCalloutView</a>
+                      </li>
+                    <li class="mb3 mb6-mxl"><a href="#MGLCalloutViewDelegate" class="link inline-block link--gray"
+                        style="word-break: break-word;">MGLCalloutViewDelegate</a>
+                      </li>
+                    <li class="mb3 mb6-mxl"><a href="#MGLCompassButton" class="link inline-block link--gray"
+                        style="word-break: break-word;">MGLCompassButton</a>
+                      </li>
+                  </ul>
+                </nav>
+              </aside>
+            </div>
+
+            <div class="col col--8-mxl col--12 prose">
+              <div class="">
+
+                <!-- MGLCalloutView -->
+                <div class="">
+                  <div class="">
+
+                    <div class="">
+                      <div class="section-content">
+                        <!-- <a href="#/MGLCalloutView"> -->
+                        <h2 id="MGLCalloutView">
+                          MGLCalloutView
+                          <!-- <span class="anchor-icon"></span> -->
+                        </h2>
+                        <!-- </a> -->
+                        <div class="declaration">
+                          <div class="language">
+                            <pre
+                              class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MGLCalloutView</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <p>A protocol for a <code>UIView</code> subclass that displays information about a selected
+                          annotation near that annotation.</p>
+
+                        <p>To receive updates from an object that conforms to the <code>MGLCalloutView</code> protocol,
+                          use the optional methods available in the
+                          <code><a href="../Protocols/MGLCalloutViewDelegate.html">MGLCalloutViewDelegate</a></code>
+                          protocol.</p>
+                        <h4 id="related-examples">Related examples</h4>
+
+                        <p>See the <a href="https://docs.mapbox.com/ios/maps/examples/custom-callout/">
+                            Display custom views as callouts</a> example to learn how to customize an
+                          <code>MGLCalloutView</code>.
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="">
+                      <div class="section-content">
+                        <div class="task-group">
+                          <ul class="item-container" style="margin-left: 0;">
+                            <li class="item">
+                              <div>
+                                <h4>representedObject</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutView(py)representedObject"></a>
+                        <a name="//apple_ref/objc/Property/representedObject" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutView(py)representedObject"><span class="token-name">representedObject</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>An object conforming to the
+                                      <code><a href="../Protocols/MGLAnnotation.html">MGLAnnotation</a></code> protocol
+                                      whose details this callout
+                                      view displays.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLAnnotation.html">MGLAnnotation</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span> <span class="n">representedObject</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L26">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>leftAccessoryView</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutView(py)leftAccessoryView"></a>
+                        <a name="//apple_ref/objc/Property/leftAccessoryView" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutView(py)leftAccessoryView"><span class="token-name">leftAccessoryView</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>A view that the user may tap to perform an action. This view is conventionally
+                                      positioned on the left side of the callout view.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">UIView</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">leftAccessoryView</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L32">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>rightAccessoryView</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutView(py)rightAccessoryView"></a>
+                        <a name="//apple_ref/objc/Property/rightAccessoryView" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutView(py)rightAccessoryView"><span class="token-name">rightAccessoryView</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>A view that the user may tap to perform an action. This view is conventionally
+                                      positioned on the right side of the callout view.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">UIView</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">rightAccessoryView</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L38">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>delegate</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutView(py)delegate"></a>
+                        <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutView(py)delegate"><span class="token-name">delegate</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>An object conforming to the
+                                      <code><a href="../Protocols/MGLCalloutViewDelegate.html">MGLCalloutViewDelegate</a></code>
+                                      method that receives
+                                      messages related to the callout view’s interactive subviews.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLCalloutViewDelegate.html">MGLCalloutViewDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MGLCalloutViewDelegate.html">MGLCalloutViewDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L44">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-presentCalloutFromRect:inView:constrainedToView:animated:</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutView(im)presentCalloutFromRect:inView:constrainedToView:animated:"></a>
+                        <a name="//apple_ref/objc/Method/-presentCalloutFromRect:inView:constrainedToView:animated:" class="dashAnchor"></a>
+                        <a class="token discouraged" href="#/c:objc(pl)MGLCalloutView(im)presentCalloutFromRect:inView:constrainedToView:animated:"><span class="token-name">-presentCalloutFromRect:inView:constrainedToView:animated:</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="aside aside-unavailable">
+                                    <p class="aside-title">Unavailable</p>
+                                    <p>Use
+                                      <code><a href="../Protocols/MGLCalloutView.html#/c:objc(pl)MGLCalloutView(im)presentCalloutFromRect:inView:constrainedToRect:animated:">-presentCalloutFromRect:inView:constrainedToRect:animated:</a></code>
+                                      instead.</p>
+
+                                  </div>
+                                  <div class="abstract">
+                                    <p>Presents a callout view by adding it to <code>view</code> and pointing at the
+                                      given rect
+                                      of <code>view</code>’s bounds. Constrains the callout to the bounds of the given
+                                      view.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">presentCalloutFromRect</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">rect</span>
+                            <span class="nf">inView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">view</span>
+                 <span class="nf">constrainedToView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">constrainedView</span>
+                          <span class="nf">animated</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">animated</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L50">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-presentCalloutFromRect:inView:constrainedToRect:animated:</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutView(im)presentCalloutFromRect:inView:constrainedToRect:animated:"></a>
+                        <a name="//apple_ref/objc/Method/-presentCalloutFromRect:inView:constrainedToRect:animated:" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutView(im)presentCalloutFromRect:inView:constrainedToRect:animated:"><span class="token-name">-presentCalloutFromRect:inView:constrainedToRect:animated:</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Presents a callout view by adding it to <code>view</code> and pointing at the
+                                      given rect
+                                      of <code>view</code>’s bounds. Constrains the callout to the rect in the space of
+                                      <code>view</code>.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">presentCalloutFromRect</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">rect</span>
+                            <span class="nf">inView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">view</span>
+                 <span class="nf">constrainedToRect</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">constrainedRect</span>
+                          <span class="nf">animated</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">animated</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="kd">func</span> <span class="nf">presentCallout</span><span class="p">(</span><span class="n">fromRect</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="n">inView</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="n">constrainedToRect</span> <span class="nv">constrainedRect</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L57">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-dismissCalloutAnimated:</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutView(im)dismissCalloutAnimated:"></a>
+                        <a name="//apple_ref/objc/Method/-dismissCalloutAnimated:" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutView(im)dismissCalloutAnimated:"><span class="token-name">-dismissCalloutAnimated:</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Dismisses the callout view.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">dismissCalloutAnimated</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">animated</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="kd">func</span> <span class="nf">dismissCallout</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L62">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-marginInsetsHintForPresentationFromRect:</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutView(im)marginInsetsHintForPresentationFromRect:"></a>
+                        <a name="//apple_ref/objc/Method/-marginInsetsHintForPresentationFromRect:" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutView(im)marginInsetsHintForPresentationFromRect:"><span class="token-name">-marginInsetsHintForPresentationFromRect:</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>If implemented, should provide margins to expand the rect the callout is
+                                      presented from.</p>
+
+                                    <p>These are used to determine positioning. Currently only the top and bottom
+                                      properties of the return
+                                      value are used. For example,
+                                      <code>{ .top = -50.0, .left = -10.0, .bottom = 0.0, .right = -10.0 }</code>
+                                      indicates
+                                      a 50 point margin above the presentation origin rect (and 10 point margins to the
+                                      left and the right)
+                                      in which the callout is assumed to be displayed.</p>
+
+                                    <p>There are no assumed defaults for these margins, as they should be calculated
+                                      from the callout that
+                                      is to be presented. For example, <code>SMCalloutView</code> generates the top
+                                      margin from the callout height, but
+                                      the left and right margins from a minimum width that the callout should have.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">UIEdgeInsets</span><span class="p">)</span><span class="nf">marginInsetsHintForPresentationFromRect</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">rect</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">marginInsetsHintForPresentation</span><span class="p">(</span><span class="n">from</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="o">!</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h4>Parameters</h4>
+                                    <table class="graybox">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                      rect
+                                    </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>Rect that the callout is presented from. This should be the same as the
+                                                one passed in
+                                                <code><a href="../Protocols/MGLCalloutView.html#/c:objc(pl)MGLCalloutView(im)presentCalloutFromRect:inView:constrainedToRect:animated:">-[MGLCalloutView presentCalloutFromRect:inView:constrainedToRect:animated:]</a></code>
+                                              </p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div>
+                                    <h4>Return Value</h4>
+                                    <p><code>UIEdgeInsets</code> representing the margins. Values should be negative.
+                                    </p>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L82">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>anchoredToAnnotation</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutView(py)anchoredToAnnotation"></a>
+                        <a name="//apple_ref/objc/Property/anchoredToAnnotation" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutView(py)anchoredToAnnotation"><span class="token-name">anchoredToAnnotation</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>A Boolean value indicating whether the callout view should be anchored to
+                                      the corresponding annotation. You can adjust the callout view’s precise location
+                                      by
+                                      overriding -[UIView setCenter:]. The callout view will not be anchored to the
+                                      annotation if this optional property is unimplemented.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">@optional</span>
+    <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span>
+              <span class="n">getter</span><span class="o">=</span><span class="n">isAnchoredToAnnotation</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">anchoredToAnnotation</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="kd">optional</span> <span class="k">var</span> <span class="nv">isAnchoredToAnnotation</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L90">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>dismissesAutomatically</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutView(py)dismissesAutomatically"></a>
+                        <a name="//apple_ref/objc/Property/dismissesAutomatically" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutView(py)dismissesAutomatically"><span class="token-name">dismissesAutomatically</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>A Boolean value indicating whether the callout view should be dismissed
+                                      automatically
+                                      when the map view’s viewport changes. Note that a single tap on the map view
+                                      still dismisses the callout view regardless of the value of this property.
+                                      The callout view will be dismissed if this optional property is unimplemented.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">@optional</span>
+    <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span>
+        <span class="n">BOOL</span> <span class="n">dismissesAutomatically</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="kd">optional</span> <span class="k">var</span> <span class="nv">dismissesAutomatically</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L98">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- MGLCalloutViewDelegate -->
+                <div class="">
+                  <div class="">
+
+                    <div class="">
+                      <div class="section-content">
+                        <!-- <a href="#/MGLCalloutViewDelegate"> -->
+                        <h2 id="MGLCalloutViewDelegate">MGLCalloutViewDelegate
+                          <!-- <span class="anchor-icon"></span> -->
+                        </h2>
+                        <!-- </a> -->
+                        <div class="declaration">
+                          <div class="language">
+                            <pre
+                              class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MGLCalloutViewDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <p>The <code>MGLCalloutViewDelegate</code> protocol defines a set of optional methods that
+                          you can use to receive messages from an object that conforms to the
+                          <code><a href="../Protocols/MGLCalloutView.html">MGLCalloutView</a></code> protocol. The
+                          callout view uses these methods to inform the
+                          delegate that the user has interacted with the the callout view.
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="">
+                      <div class="section-content">
+                        <div class="task-group">
+                          <ul class="item-container" style="margin-left: 0;">
+                            <li class="item">
+                              <div>
+                                <h4>-calloutViewShouldHighlight:</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutViewDelegate(im)calloutViewShouldHighlight:"></a>
+                        <a name="//apple_ref/objc/Method/-calloutViewShouldHighlight:" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutViewDelegate(im)calloutViewShouldHighlight:"><span class="token-name">-calloutViewShouldHighlight:</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Returns a Boolean value indicating whether the entire callout view “highlights”
+                                      when tapped. The default value is <code>YES</code>, which means the callout view
+                                      highlights when tapped.</p>
+
+                                    <p>The return value of this method is ignored unless the delegate also responds to
+                                      the <code>-calloutViewTapped</code> method.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">calloutViewShouldHighlight</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="n">UIView</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLCalloutView.html">MGLCalloutView</a></span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">calloutView</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">calloutViewShouldHighlight</span><span class="p">(</span><span class="n">_</span> <span class="nv">calloutView</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L119">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-calloutViewTapped:</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutViewDelegate(im)calloutViewTapped:"></a>
+                        <a name="//apple_ref/objc/Method/-calloutViewTapped:" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutViewDelegate(im)calloutViewTapped:"><span class="token-name">-calloutViewTapped:</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Tells the delegate that the callout view has been tapped.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">calloutViewTapped</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLCalloutView.html">MGLCalloutView</a></span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">calloutView</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">calloutViewTapped</span><span class="p">(</span><span class="n">_</span> <span class="nv">calloutView</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L124">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-calloutViewWillAppear:</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutViewDelegate(im)calloutViewWillAppear:"></a>
+                        <a name="//apple_ref/objc/Method/-calloutViewWillAppear:" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutViewDelegate(im)calloutViewWillAppear:"><span class="token-name">-calloutViewWillAppear:</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Called before the callout view appears on screen, or before the appearance
+                                      animation will start.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">calloutViewWillAppear</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLCalloutView.html">MGLCalloutView</a></span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">calloutView</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">calloutViewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">calloutView</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L130">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-calloutViewDidAppear:</h4>
+                                <!-- <code>
+                        <a name="/c:objc(pl)MGLCalloutViewDelegate(im)calloutViewDidAppear:"></a>
+                        <a name="//apple_ref/objc/Method/-calloutViewDidAppear:" class="dashAnchor"></a>
+                        <a class="token" href="#/c:objc(pl)MGLCalloutViewDelegate(im)calloutViewDidAppear:"><span class="token-name">-calloutViewDidAppear:</span><span class="token-icon"></span></a>
+                        </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Called after the callout view appears on screen, or after the appearance
+                                      animation is complete.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">calloutViewDidAppear</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLCalloutView.html">MGLCalloutView</a></span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">calloutView</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">calloutViewDidAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">calloutView</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCalloutView.h#L136">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- MGLCompassButton -->
+                <div class="">
+                  <div class="">
+
+                    <div class="">
+                      <div class="section-content">
+                        <!-- <a href="#/MGLCompassButton"> -->
+                        <h2 id="MGLCompassButton">MGLCompassButton
+                          <!-- <span class="anchor-icon"></span> -->
+                        </h2>
+                        <!-- </a> -->
+                        <div class="declaration">
+                          <div class="language">
+                            <pre
+                              class="highlight objective_c"><code>
+      <span class="k">@interface</span> <span class="nc">MGLCompassButton</span> <span class="p">:</span> <span class="nc">UIImageView</span></code></pre>
+
+                          </div>
+                        </div>
+                        <p>A specialized view that displays the current compass heading for its associated map.</p>
+
+                      </div>
+                    </div>
+
+                    <div class="">
+                      <div class="section-content">
+                        <div class="task-group">
+                          <ul class="item-container" style="margin-left: 0;">
+                            <li class="item">
+                              <div>
+                                <h4>compassVisibility</h4>
+                                <!-- <code>
+                          <a name="/c:objc(cs)MGLCompassButton(py)compassVisibility"></a>
+                          <a name="//apple_ref/objc/Property/compassVisibility" class="dashAnchor"></a>
+                          <a class="token" href="#/c:objc(cs)MGLCompassButton(py)compassVisibility"><span class="token-name">compassVisibility</span><span class="token-icon"></span></a>
+                          </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>The visibility of the compass button.</p>
+
+                                    <p>You can configure a compass button to be visible all the time or only when the
+                                      compass heading changes.</p>
+
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">
+                                        Objective-C</p>
+                                      <pre
+                                        class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/MGLOrnamentVisibility.html">MGLOrnamentVisibility</a></span> <span class="n">compassVisibility</span><span class="p">;</span></code></pre>
+
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">
+                                        Swift</p>
+                                      <pre
+                                        class="highlight swift"><code><span class="k">var</span> <span class="nv">compassVisibility</span><span class="p">:</span> <span class="kt"><a href="../Enums/MGLOrnamentVisibility.html">MGLOrnamentVisibility</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a
+                                      href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/ios/src/MGLCompassButton.h#L18">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon"
+                                        src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <section class="footer limiter">
+    <p><a class="link" href="https://github.com/maplibre/maplibre-gl-native/blob/main/platform/ios/LICENSE.md"
+        target="_blank" rel="external noopener">License</a></p> Generated by <a class="link"
+      href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.3</a>, a <a class="link"
+      href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+  </section> -->
+</body>
+
+
+</html>

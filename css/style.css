@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: "Cera";
+    font-weight: 700;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-Bold.v1.woff2) format("woff2"),
+        url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-Bold.v1.woff) format("woff");
+}
+                    
+
+@font-face {
+    font-family: "Cera";
+    font-style: italic;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-BoldItalic.v1.woff2) format("woff2"),
+        url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-BoldItalic.v1.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-regular.v1.woff2) format("woff2"),
+        url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-regular.v1.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 300;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-light.v1.woff2) format("woff2"),
+        url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-light.v1.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-italic.v1.woff2) format("woff2"),
+        url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-italic.v1.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 700;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-bold.v1.woff2) format("woff2"),
+        url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-bold.v1.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: italic;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-bolditalic.v1.woff2) format("woff2"),
+        url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-bolditalic.v1.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-regular.v1.woff2) format("woff2"),
+        url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-regular.v1.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 700;
+    src: url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-bold.v1.woff2) format("woff2"),
+        url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-bold.v1.woff) format("woff");
+}
+
+a,
+aside,
+div,
+footer,
+h1,
+h2,
+h4,
+header,
+html,
+li,
+nav,
+p,
+span,
+strong,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%; */
+    vertical-align: baseline;
+}
+
+body {
+    padding: 0;
+    vertical-align: baseline;
+}
+
+img {
+    padding: 0;
+    font-size: 100%;
+}
+
+aside,
+footer,
+header,
+main,
+nav {
+    display: block;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h4 {
+    font-weight: 400;
+}
+
+*,
+::after,
+::before,
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body,
+button,
+img {
+    margin: 0;
+    border: 0;
+}
+
+.heading{
+    font-family: "Poppins";
+    text-transform: inherit; 
+    font-weight: 400;
+}
+
+button {
+    background: 0 0;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    width: auto;
+    text-align: left;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.shell-wrapper button::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mb6 {
+    margin-bottom: 6px !important;
+}
+
+.txt-l {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.btn--blue {
+    background-color: #4264fb;
+}
+
+.btn--blue:hover,
+.shell-wrapper .shell-btn:hover {
+    background-color: #314ccd;
+}
+
+.color-gray {
+    color: #5b7897 !important;
+}
+
+.color-gray-light {
+    color: #c6d2e1 !important;
+}
+
+.color-blue {
+    color: #4264fb !important;
+}
+
+.color-darken75 {
+    color: rgba(31, 51, 73, 0.75) !important;
+}
+
+.color-darken50 {
+    color: rgba(31, 51, 73, 0.50) !important;
+}
+
+.color-darken25 {
+    color: rgba(31, 51, 73, 0.25) !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+.bg-blue-faint {
+    background-color: #edf0fd !important;
+}
+
+.round-full {
+    border-radius: 9999px !important;
+}
+
+.link--gray {
+    color: #5b7897;
+}
+
+.link--gray:hover {
+    color: #23374d;
+}
+
+.border--darken10 {
+    border-color: rgba(31, 51, 73, 0.1) !important;
+}
+
+.shadow-darken25 {
+    box-shadow: 0 0 10px 2px rgba(31, 51, 73, 0.25) !important;
+}
+
+.color-blue-on-hover:hover {
+    color: #4264fb !important;
+}
+
+.link {
+    cursor: pointer;
+    color: #4264fb;
+    transition: color 0.125s;
+}
+
+.link--gray {
+    color: #5b7897;
+}
+
+.link:hover {
+    color: #314ccd;
+}
+
+.link:disabled {
+    pointer-events: none;
+    cursor: default;
+    color: rgba(147, 167, 191, 0.45);
+}
+
+body {
+    color: #1f3349;
+    font-size: 14px;
+    font-family: "Poppins" !important;
+    line-height: 24px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+.txt-uppercase {
+    text-transform: uppercase !important;
+}
+
+.txt-bold {
+    font-weight: 700 !important;
+}
+
+.txt-m {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.txt-fancy {
+    /* font-family: "Cera", "Open Sans", sans-serif !important; */
+    font-weight: 600;
+}
+
+.border--darken10 {
+    border-color: rgba(31, 51, 73, 0.1) !important;
+}
+
+.border-b {
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.border-0 {
+    border: 0px;
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+.flex-child--no-shrink {
+    -webkit-flex-shrink: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+.flex-child {
+    display: block;
+    max-width: 100%;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.border-4 {
+    border-radius: 4px !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.px12 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+.pb12 {
+    padding-bottom: 12px !important;
+}
+
+.pt3 {
+    padding-top: 3px !important;
+}
+
+.txt-17 {
+    font-size: 17px;
+    letter-spacing: 0.025em;
+}
+
+.flex-parent {
+    display: -webkit-flex !important;
+    display: flex !important;
+}
+
+.flex-parent--space-between-main {
+    -webkit-justify-content: space-between !important;
+    justify-content: space-between !important;
+}
+.limiter .breadcrumbs{
+    font-size: 17px;
+}
+.limiter{
+    padding: 0 20px;
+    
+}
+.content-wrapper{
+    padding-top: 20px;
+}
+.menu-drop-list {
+    display: none;
+}
+
+#docs-content .prose h1,
+#docs-content.prose h1 {
+    margin-top: 6px;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.breadcrumbs {
+    font-size: 15px;
+    line-height: 24px;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-weight: 400;
+}
+
+.grid {
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+}
+
+.ms-60 {
+    padding-left: 60px;
+}
+
+.grid--gut60>.col,
+.grid--gut60>.col-ml,
+.grid--gut60>.col-mm,
+.grid--gut60>.col-mxl {
+    /* padding-left: 60px; */
+}
+
+#docs-content .prose h2:not(.unprose) {
+    font-weight: 400 !important;
+    font-size: 26px;
+    border-top: 1px solid !important;
+    border-color: #d6dee8 !important;
+    padding-top: 30px;
+    margin: 20px 0 18px;
+    /* font-family: 'Open Sans',sans-serif; */
+}
+
+#docs-content .prose p, #docs-content .prose ul li{
+    font-size: 14px;
+}
+
+.prose :last-child:not(.unprose) {
+    margin-bottom: 0;
+}
+
+.prose a:not(.unprose) {
+    color: #4264fb;
+    text-decoration: underline;
+}
+
+.prose img:not(.unprose),
+.prose p:not(.unprose) {
+    margin-bottom: 12px;
+}
+
+.prose :last-child:not(.unprose) {
+    margin-bottom: 0;
+}
+
+.prose li:not(.unprose) {
+    display: list-item;
+    margin-bottom: 6px;
+}
+
+.prose ul:not(.unprose) {
+    margin-left: 24px;
+    margin-bottom: 12px;
+    list-style: disc;
+}
+
+.prose h4:not(.unprose) {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 18px;
+    text-transform: capitalize;
+    word-break: break-all;
+}
+
+.col--12{
+    width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+    .scroll-auto-mm {
+        overflow: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .sticky-mm {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+
+    .viewport-almost-mm {
+        height: 90vh !important;
+    }
+
+    .mr36-mm {
+        margin-right: 36px !important;
+    }
+
+    .py3-mm {
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+    }
+
+    .px0-mm {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .px12-mm {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .pe12-mm {
+        padding-right: 12px !important;
+    }
+
+    .py12-mm {
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+
+    .w180-mm {
+        width: 180px !important;
+    }
+
+    .flex-parent-mm {
+        display: -webkit-flex !important;
+        display: flex !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .limiter{
+        max-width: 1440px;
+    }
+    .col--4-mxl,
+    .col--8-mxl {
+        -webkit-flex: none;
+        flex: none;
+        width: 25% !important;
+    }
+
+    .col--8-mxl {
+        width: 66.6666% !important;
+    }
+
+    .viewport-almost-mxl {
+        height: 90vh !important;
+    }
+
+    .col--8-mxl,
+    .col--9-mxl {
+        width: 75% !important;
+    }
+
+    .sticky-mxl {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+
+    .scroll-auto-mxl {
+        overflow: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .dr-ui--page-layout-aside {
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .dr-ui--page-layout-aside .dr-ui--on-this-page li {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .mb6-mxl {
+        margin-bottom: 6px!important;
+    }
+}
