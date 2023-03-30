@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Maps Reference</title>
+  <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta charset="utf-8">
+  <script src="js/jquery.min.js" defer></script>
+  <script src="js/jazzy.js" defer></script>
+
+  <script src="js/lunr.min.js" defer></script>
+  <script src="js/typeahead.jquery.js" defer></script>
+  <script src="js/jazzy.search.js" defer></script>
+  <meta class="swiftype" name="type" data-type="enum" content="Mapbox Reference" />
+  <meta class="swiftype" name="title" data-type="string" content="Location Updates" />
+  <style type="text/css">
+    /* .nav-group-name[data-name="Maps"]>.small-heading,
+    .nav-group-task[data-name="Maps"] {
+      background-color: #f5f8fc;
+      font-family: "Open Sans Bold";
+      border-left: 3px solid #3a68d8;
+      padding-left: 5px
+    } */
+  </style>
+</head>
+
+<body>
+
+  <a name="//apple_ref/objc/Section/Location-Updates" class="dashAnchor"></a>
+
+  <a title="Location Updates Reference"></a>
+
+  <header class="header-container">
+    <div class="limiter">
+      <div class="header">
+        <p class="header-col header-col--primary">
+          <a class="header-link" href="index.html">
+            <img style="height: 25px;" class="header-icon"
+              src="https://2nm493.n3cdn1.secureserver.net/wp-content/uploads/2021/04/UNL-logo-new_white.png?time=1671101468"
+              alt="Mapbox Docs" />
+            <span class='header-tag'>UNL Location Updates SDK for iOS Reference</span>
+          </a>
+
+        </p>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- <div class="breadcrumbs">
+    <div class="limiter">
+      <a class="breadcrumb" href="index.html">Location Updates Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Location Updates Reference
+    </div>
+  </div> -->
+
+  <div class="content-wrapper limiter">
+    <nav class="navigation pe12-mm">
+      <div class="mb6 border-b border--darken10">
+        <div class="mb6">
+          <div class="dr-ui--product-menu">
+            <a href="#" class="txt-fancy txt-l block color-blue-on-hover">UNL iOS Sdk
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-col--secondary py12-mm">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead
+            class="w-full mb-0 bg-transparent border-4">
+        </form>
+      </div>
+      <ul class="nav-groups">
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full "
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 txt-17 color-darken75"
+            href="index.html">Getting Started</a>
+        </li>
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 color-darken75"
+            href="authentication.html">AUTHENTICATION</a>
+        </li>
+        <li class="nav-group-name py3-mm txt-uppercase txt-fancy round-full w-full" data-name="Appendices">
+          <div
+            class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main txt-17 bg-blue-faint color-blue"
+            id="api-ref">
+            <a href="Appendices.html" class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm">API
+              Reference</a>
+            <button class="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+              aria-label="Toggle API Reference menu" aria-controls="menu-api-reference" aria-expanded="true">
+              <img src="./img/arrow-down.png" height="12px" />
+            </button>
+          </div>
+          <ul id="menu-drop-list" class="nav-group-tasks px12 py3-mm txt-fancy txt-17 txt-l menu-drop-list"
+            style="display:block">
+            <li class="nav-group-task" data-name="Appendices" data-url="Appendices.html">
+              <a title="Appendices" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Appendices.html">Appendices</a>
+            </li>
+            <li class="nav-group-task" data-name="Maps" data-url="Maps.html">
+              <a title="Working with GeoJSON Data" class="nav-group-task-link color-darken50 color-blue-on-hover"
+                href="Maps.html">Maps</a>
+            </li>
+            <li class="nav-group-task" data-name="Primitive Shapes" data-url="primitive-shape.html">
+              <a title="Primitive Shapes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="primitive-shape.html">Primitive Shapes</a>
+            </li>
+            <li class="nav-group-task" data-name="Annotations" data-url="Annotations.html">
+              <a title="Annotations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Annotations.html">Annotations</a>
+            </li>
+            <li class="nav-group-task" data-name="User Interaction" data-url="User-Interaction.html">
+              <a title="User Interaction" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="User-Interaction.html">User Interaction</a>
+            </li>
+            <li class="nav-group-task" data-name="Location Updates" data-url="Location-Updates.html">
+              <a title="Location Updates" class="nav-group-task-link color-blue color-blue-on-hover "
+                href="Location-Updates.html">Location Updates</a>
+            </li>
+            <li class="nav-group-task" data-name="Styling the Map" data-url="Styling The Map.html">
+              <a title="Styling the Map" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Styling The Map.html">Styling the Map</a>
+            </li>
+            <li class="nav-group-task" data-name="Style Primitives" data-url="Style Primitives.html">
+              <a title="Style Primitives" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Style Primitives.html">Style Primitives</a>
+            </li>
+            <li class="nav-group-task" data-name="Style Content" data-url="Style Content.html">
+              <a title="Style Content" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Style Content.html">Style Content</a>
+            </li>
+            <li class="nav-group-task" data-name="Style Layers" data-url="Style Layers.html">
+              <a title="Style Layers" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Style Layers.html">Style Layers</a>
+            </li>
+            <li class="nav-group-task" data-name="Offline Maps" data-url="Offline Maps.html">
+              <a title="Offline Maps" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Offline Maps.html">Offline Maps</a>
+            </li>
+            <li class="nav-group-task" data-name="Geometry" data-url="Geometry.html">
+              <a title="Geometry" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Geometry.html">Geometry</a>
+            </li>
+            <li class="nav-group-task" data-name="Formatters" data-url="Formatters.html">
+              <a title="Formatters" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Formatters.html">Formatters</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Categories" data-url="Other Categories.html">
+              <a title="Other Categories" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Categories.html">Other Categories</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Classes" data-url="Other Classes.html">
+              <a title="Other Classes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Classes.html">Other Classes</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Constants" data-url="Other Constants.html">
+              <a title="Other Constants" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Constants.html">Other Constants</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Enumerations" data-url="Other Enums.html">
+              <a title="Other Enumerations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Enums.html">Other Enumerations</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Protocols" data-url="Other Protocols.html">
+              <a title="Other Protocols" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Protocols.html">Other Protocols</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Type Definitions" data-url="Other Type Definitions.html">
+              <a title="Other Type Definitions" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Type Definitions.html">Other Type Definitions</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Functions" data-url="Other Functions.html">
+              <a title="Other Functions" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Functions.html">Other Functions</a>
+            </li>
+            <li class="nav-group-task" data-name="Other Structures" data-url="Other Structs.html">
+              <a title="Other Structures" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Other Structs.html">Other Structures</a>
+            </li>
+            <li class="nav-group-task" data-name="Classes" data-url="Classes.html">
+              <a title="Classes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Classes.html">Classes</a>
+            </li>
+            <li class="nav-group-task" data-name="Enumerations" data-url="Enums.html">
+              <a title="Enumerations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Enums.html">Enumerations</a>
+            </li>
+            <li class="nav-group-task" data-name="Protocols" data-url="Protocols.html">
+              <a title="Protocols" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Protocols.html">Protocols</a>
+            </li>
+            <li class="nav-group-task" data-name="Structures" data-url="Structs.html">
+              <a title="Structures" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                href="Structs.html">Structures</a>
+            </li>
+          </ul>
+
+        </li>
+        <!-- <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 color-darken75" href="#">UNL
+            Plugins</a>
+        </li> -->
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 color-darken75"
+            href="examples.html">Examples</a>
+        </li>
+
+
+      </ul>
+    </nav>
+    <div class="main-content">
+      <div class="breadcrumbs bg-transparent pb-12 pt-3 border-0">
+        <div class="limiter">
+          <a class="breadcrumb link" href="index.html">UNL iOS SDK</a>
+          <img class="carat" src="img/carat.png" />
+          <span class="breadcrumb color-gray none inline-block-mm">API REFERENCE</span>
+          <img class="carat" src="img/carat.png" />
+          <span class="breadcrumb color-gray none inline-block-mm">Location Updates</span>
+        </div>
+      </div>
+
+      <section class="section" id="docs-content">
+        <div class="section-content">
+          <div class="col prose col--8-mxl col--12">
+            <h1 class="txt-fancy">Location Updates</h1>
+          </div>
+
+          <div class="grid grid--gut60 ">
+            <div class="dr-ui--page-layout-aside col col--12 col--4-mxl ms-60">
+              <aside data-swiftype-index="false" class="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                style="top:10px">
+                <nav aria-labelledby="on-this-page" class="dr-ui--on-this-page mb36-mxl mb18">
+                  <h2 id="on-this-page" class="unprose txt-m txt-bold mb6">On this page</h2>
+                  <ul class="scrollitem">
+                    <li class="mb3 mb6-mxl"><a href="#MGLLocationManager" class="link inline-block link--blue"
+                      style="word-break: break-word;">MGLLocationManager</a>
+                    </li>
+                    <li class="mb3 mb6-mxl"><a href="#MGLLocationManagerDelegate" class="link inline-block link--gray"
+                        style="word-break: break-word;">MGLLocationManagerDelegate</a></li>
+
+                  </ul>
+                </nav>
+              </aside>
+            </div>
+
+            <div class="col col--8-mxl col--12 prose">
+              <div class="">
+                
+                <!-- MGLLocationManager -->
+                <div class="">
+                  <div class="">
+
+                    <div class="">
+                      <div class="section-content">
+                        <!-- <a href="#/MGLLocationManager"> -->
+                          <h2 id="MGLLocationManager">MGLLocationManager
+                            <!-- <span class="anchor-icon"></span> -->
+                          </h2>
+                          <!-- </a> -->
+                          <div class="declaration">
+                            <div class="language">
+                              <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MGLLocationManager</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+            
+                            </div>
+                          </div>
+                        <p>The <code>MGLLocationManager</code> protocol defines a set of methods that a class must
+            implement in order to serve as the location manager of an <code><a href="../Classes/MGLMapView.html">MGLMapView</a></code>. A location
+            manager is responsible for notifying the map view about location-related events,
+            such as a change in the user’s location. This protocol is similar to the
+            Core Location framework’s <code>CLLocationManager</code> class, but your implementation
+            does not need to be based on <code>CLLocationManager</code>.</p>
+            
+            <p>To receive location updates from an object that conforms to the <code>MGLLocationManager</code>
+            protocol, use the optional methods available in the <code><a href="../Protocols/MGLLocationManagerDelegate.html">MGLLocationManagerDelegate</a></code> protocol.</p>
+            
+                      </div>
+                    </div>
+            
+                    <div class="">
+                      <div class="section-content">
+                        <div class="task-group">
+                          <div class="task-name-container">
+                            <a name="/Configuring%20Location%20Update%20Precision"></a>
+                            <a name="//apple_ref/objc/Section/Configuring Location Update Precision" class="dashAnchor"></a>
+
+                            <!-- <a href="#/Configuring%20Location%20Update%20Precision"> -->
+                              <h4 id="Configuring%20Location%20Update%20Precision" class="section-name">
+                                Configuring Location Update Precision
+                                <!-- <span class="anchor-icon"></span> -->
+                              </h4>
+                            <!-- </a> -->
+                          </div>
+                          <ul class="item-container" style="margin-left: 0;">
+                            <li class="item">
+                              <div>
+                                <h4>-distanceFilter</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)distanceFilter"></a>
+                                <a name="//apple_ref/objc/Method/-distanceFilter" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)distanceFilter"><span class="token-name">-distanceFilter</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Specifies the minimum distance (measured in meters) a device must move horizontally
+            before a location update is generated.</p>
+            
+            <p>The default value of this property is <code>kCLDistanceFilterNone</code> when <code><a href="../Classes/MGLMapView.html">MGLMapView</a></code> uses its
+            default location manager.</p>
+            <div class="aside aside-see">
+                <p class="aside-title">See</p>
+                <code>CLLocationManager.distanceFilter</code>
+            
+            </div>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CLLocationDistance</span><span class="p">)</span><span class="n">distanceFilter</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">distanceFilter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">CLLocationDistance</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L34">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-setDistanceFilter:</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)setDistanceFilter:"></a>
+                                <a name="//apple_ref/objc/Method/-setDistanceFilter:" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)setDistanceFilter:"><span class="token-name">-setDistanceFilter:</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Sets the minimum update distance in meters.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDistanceFilter</span><span class="p">:(</span><span class="n">CLLocationDistance</span><span class="p">)</span><span class="nv">distanceFilter</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setDistanceFilter</span><span class="p">(</span><span class="n">_</span> <span class="nv">distanceFilter</span><span class="p">:</span> <span class="kt">CLLocationDistance</span><span class="p">)</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h4>Parameters</h4>
+                                    <table class="graybox">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              distanceFilter
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>The distance filter in meters.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L40">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-desiredAccuracy</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)desiredAccuracy"></a>
+                                <a name="//apple_ref/objc/Method/-desiredAccuracy" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)desiredAccuracy"><span class="token-name">-desiredAccuracy</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Specifies the accuracy of the location data.</p>
+            
+            <p>The default value is <code>kCLLocationAccuracyBest</code> when <code><a href="../Classes/MGLMapView.html">MGLMapView</a></code> uses its
+            default location manager.</p>
+            <div class="aside aside-note">
+                <p class="aside-title">Note</p>
+                <p>Determining a location with greater accuracy requires more time and more power.</p>
+            
+            </div><div class="aside aside-see">
+                <p class="aside-title">See</p>
+                <p><code>CLLocationManager.desiredAccuracy</code></p>
+            
+            </div>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CLLocationAccuracy</span><span class="p">)</span><span class="n">desiredAccuracy</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">desiredAccuracy</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">CLLocationAccuracy</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L52">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-setDesiredAccuracy:</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)setDesiredAccuracy:"></a>
+                                <a name="//apple_ref/objc/Method/-setDesiredAccuracy:" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)setDesiredAccuracy:"><span class="token-name">-setDesiredAccuracy:</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Sets the desired location accuracy.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDesiredAccuracy</span><span class="p">:(</span><span class="n">CLLocationAccuracy</span><span class="p">)</span><span class="nv">desiredAccuracy</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setDesiredAccuracy</span><span class="p">(</span><span class="n">_</span> <span class="nv">desiredAccuracy</span><span class="p">:</span> <span class="kt">CLLocationAccuracy</span><span class="p">)</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h4>Parameters</h4>
+                                    <table class="graybox">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              desiredAccuracy
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>The desired location accuracy.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L59">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-accuracyAuthorization</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)accuracyAuthorization"></a>
+                                <a name="//apple_ref/objc/Method/-accuracyAuthorization" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)accuracyAuthorization"><span class="token-name">-accuracyAuthorization</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Specifies the level of location accuracy the Maps SDK has permission to use.</p>
+            <div class="aside aside-note">
+                <p class="aside-title">Note</p>
+                If the value of this property is <code>CLAccuracyAuthorizationFullAccuracy</code>, you can set the
+            <code>MGLLocationManager.desiredAccuracy</code> property to any value. If the value is <code>CLAccuracyAuthorizationReducedAccuracy</code>,
+            setting <code>MGLLocationManager.desiredAccuracy</code> to a value other than<code>kCLLocationAccuracyReduced</code> has no effect on
+            the location information.
+            
+            </div>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CLAccuracyAuthorization</span><span class="p">)</span><span class="n">accuracyAuthorization</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">accuracyAuthorization</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">CLAccuracyAuthorization</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L70">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-activityType</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)activityType"></a>
+                                <a name="//apple_ref/objc/Method/-activityType" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)activityType"><span class="token-name">-activityType</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Specifies the type of user activity associated with the location updates.</p>
+            
+            <p>The location manager uses this property as a cue to determine when location updates
+            may be automatically paused.</p>
+            
+            <p>The default value is <code>CLActivityTypeOther</code> when <code><a href="../Classes/MGLMapView.html">MGLMapView</a></code> uses its
+            default location manager.</p>
+            <div class="aside aside-see">
+                <p class="aside-title">See</p>
+                <code>CLLocationManager.activityType</code>
+            
+            </div>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CLActivityType</span><span class="p">)</span><span class="n">activityType</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">activityType</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">CLActivityType</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L84">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-setActivityType:</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)setActivityType:"></a>
+                                <a name="//apple_ref/objc/Method/-setActivityType:" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)setActivityType:"><span class="token-name">-setActivityType:</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Sets the type of user activity associated with the location updates.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setActivityType</span><span class="p">:(</span><span class="n">CLActivityType</span><span class="p">)</span><span class="nv">activityType</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setActivityType</span><span class="p">(</span><span class="n">_</span> <span class="nv">activityType</span><span class="p">:</span> <span class="kt">CLActivityType</span><span class="p">)</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h4>Parameters</h4>
+                                    <table class="graybox">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              activityType
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>The location’s manager activity type.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L91">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-requestTemporaryFullAccuracyAuthorizationWithPurposeKey:</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)requestTemporaryFullAccuracyAuthorizationWithPurposeKey:"></a>
+                                <a name="//apple_ref/objc/Method/-requestTemporaryFullAccuracyAuthorizationWithPurposeKey:" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)requestTemporaryFullAccuracyAuthorizationWithPurposeKey:"><span class="token-name">-requestTemporaryFullAccuracyAuthorizationWithPurposeKey:</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Requests the user’s permission to temporarily use location update services
+            with full accuracy.</p>
+            <div class="aside aside-note">
+                <p class="aside-title">Note</p>
+                If the user turned off location accuracy you may use this method to
+            request full accuracy for a session.
+            
+            </div>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">requestTemporaryFullAccuracyAuthorizationWithPurposeKey</span><span class="p">:</span>
+                <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">purposeKey</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">requestTemporaryFullAccuracyAuthorization</span><span class="p">(</span><span class="n">withPurposeKey</span> <span class="nv">purposeKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L101">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>delegate</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(py)delegate"></a>
+                                <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(py)delegate"><span class="token-name">delegate</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>The delegate to receive location updates.</p>
+            
+            <p>Do not set the location manager’s delegate yourself. <code><a href="../Classes/MGLMapView.html">MGLMapView</a></code> sets this property
+            after the location manager becomes <code><a href="../Classes/MGLMapView.html">MGLMapView</a></code>’s location manager.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="err">@required</span>
+            <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
+                <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLLocationManagerDelegate.html">MGLLocationManagerDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MGLLocationManagerDelegate.html">MGLLocationManagerDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L112">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="task-group">
+                          <div class="task-name-container">
+                            <!-- <a name="/Requesting%20Authorization%20for%20Location%20Services"></a>
+                            <a name="//apple_ref/objc/Section/Requesting Authorization for Location Services" class="dashAnchor"></a> -->
+
+                            <!-- <a href="#/Requesting%20Authorization%20for%20Location%20Services"> -->
+
+                              <h4 id="Requesting%20Authorization%20for%20Location%20Services" class="section-name">
+                                Requesting Authorization for Location Services
+                                <!-- <span class="anchor-icon"></span> -->
+                              </h4>
+                            <!-- </a> -->
+                          </div>
+                          <ul class="item-container" style="margin-left: 0;">
+                            <li class="item">
+                              <div>
+                                <h4>authorizationStatus</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(py)authorizationStatus"></a>
+                                <a name="//apple_ref/objc/Property/authorizationStatus" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(py)authorizationStatus"><span class="token-name">authorizationStatus</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Returns the current localization authorization status.</p>
+            <div class="aside aside-see">
+                <p class="aside-title">See</p>
+                <code>+[CLLocationManger authorizationStatus]</code>
+            
+            </div>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="err">@required</span>
+            <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">CLAuthorizationStatus</span> <span class="n">authorizationStatus</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">authorizationStatus</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L121">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-requestAlwaysAuthorization</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)requestAlwaysAuthorization"></a>
+                                <a name="//apple_ref/objc/Method/-requestAlwaysAuthorization" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)requestAlwaysAuthorization"><span class="token-name">-requestAlwaysAuthorization</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Requests permission to use the location services whenever the app is running.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">requestAlwaysAuthorization</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">requestAlwaysAuthorization</span><span class="p">()</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L126">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-requestWhenInUseAuthorization</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)requestWhenInUseAuthorization"></a>
+                                <a name="//apple_ref/objc/Method/-requestWhenInUseAuthorization" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)requestWhenInUseAuthorization"><span class="token-name">-requestWhenInUseAuthorization</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Requests permission to use the location services while the app is in
+            the foreground.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">requestWhenInUseAuthorization</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">requestWhenInUseAuthorization</span><span class="p">()</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L132">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="task-group">
+                          <div class="task-name-container">
+                            <a name="/Initiating%20Location%20Updates"></a>
+                            <a name="//apple_ref/objc/Section/Initiating Location Updates" class="dashAnchor"></a>
+                            <!-- <a href="#/Initiating%20Location%20Updates"> -->
+                              <h4 id="Initiating%20Location%20Updates" class="section-name">
+                                Initiating Location Updates
+                                <!-- <span class="anchor-icon"></span> -->
+                              </h4>
+                            <!-- </a> -->
+                          </div>
+                          <ul class="item-container" style="margin-left: 0;">
+                            <li class="item">
+                              <div>
+                                <h4>-startUpdatingLocation</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)startUpdatingLocation"></a>
+                                <a name="//apple_ref/objc/Method/-startUpdatingLocation" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)startUpdatingLocation"><span class="token-name">-startUpdatingLocation</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Starts the generation of location updates that reports the user’s current location.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">startUpdatingLocation</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startUpdatingLocation</span><span class="p">()</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L139">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-stopUpdatingLocation</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)stopUpdatingLocation"></a>
+                                <a name="//apple_ref/objc/Method/-stopUpdatingLocation" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)stopUpdatingLocation"><span class="token-name">-stopUpdatingLocation</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Stops the generation of location updates.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stopUpdatingLocation</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopUpdatingLocation</span><span class="p">()</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L144">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="task-group">
+                          <div class="task-name-container">
+                            <a name="/Initiating%20Heading%20Updates"></a>
+                            <a name="//apple_ref/objc/Section/Initiating Heading Updates" class="dashAnchor"></a>
+                            <!-- <a href="#/Initiating%20Heading%20Updates"> -->
+                              <h4 id="Initiating%20Heading%20Updates" class="section-name">
+                                Initiating Heading Updates
+                                <!-- <span class="anchor-icon"></span> -->
+                              </h4>
+                            <!-- </a> -->
+                          </div>
+                          <ul class="item-container" style="margin-left: 0;">
+                            <li class="item">
+                              <div>
+                                <h4>headingOrientation</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(py)headingOrientation"></a>
+                                <a name="//apple_ref/objc/Property/headingOrientation" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(py)headingOrientation"><span class="token-name">headingOrientation</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Specifies a physical device orientation.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="err">@required</span>
+            <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
+                <span class="n">CLDeviceOrientation</span> <span class="n">headingOrientation</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">headingOrientation</span><span class="p">:</span> <span class="kt">CLDeviceOrientation</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L151">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-startUpdatingHeading</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)startUpdatingHeading"></a>
+                                <a name="//apple_ref/objc/Method/-startUpdatingHeading" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)startUpdatingHeading"><span class="token-name">-startUpdatingHeading</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Starts the generation of heading updates that reports the user’s current hading.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">startUpdatingHeading</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startUpdatingHeading</span><span class="p">()</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L156">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-stopUpdatingHeading</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)stopUpdatingHeading"></a>
+                                <a name="//apple_ref/objc/Method/-stopUpdatingHeading" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)stopUpdatingHeading"><span class="token-name">-stopUpdatingHeading</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Stops the generation of heading updates.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stopUpdatingHeading</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopUpdatingHeading</span><span class="p">()</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L161">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-dismissHeadingCalibrationDisplay</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManager(im)dismissHeadingCalibrationDisplay"></a>
+                                <a name="//apple_ref/objc/Method/-dismissHeadingCalibrationDisplay" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManager(im)dismissHeadingCalibrationDisplay"><span class="token-name">-dismissHeadingCalibrationDisplay</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Dissmisses immediately the heading calibration view from screen.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">dismissHeadingCalibrationDisplay</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">dismissHeadingCalibrationDisplay</span><span class="p">()</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L166">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+            
+                  </div>
+                </div>
+
+                <!-- MGLLocationManagerDelegate -->
+                <div class="">
+                  <div class="">
+
+                    <div class="">
+                      <div class="section-content">
+                        <!-- <a href="#/MGLLocationManagerDelegate"> -->
+                          <h2 id="MGLLocationManagerDelegate">MGLLocationManagerDelegate
+                            <!-- <span class="anchor-icon"></span> -->
+                          </h2>
+                        <!-- </a> -->
+                          <div class="declaration">
+                            <div class="language">
+                              <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MGLLocationManagerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+            
+                            </div>
+                          </div>
+                        <p>The <code>MGLLocationManagerDelegate</code> protocol defines a set of methods that respond
+            to location updates from an <code><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></code> object that is serving as the
+            location manager of an <code><a href="../Classes/MGLMapView.html">MGLMapView</a></code>.</p>
+            
+                      </div>
+                    </div>
+            
+                    <div class="">
+                      <div class="section-content">
+                        <div class="task-group">
+                          <div class="task-name-container">
+                            <a name="/Responding%20to%20Location%20Updates"></a>
+                            <a name="//apple_ref/objc/Section/Responding to Location Updates" class="dashAnchor"></a>
+                            <!-- <a href="#/Responding%20to%20Location%20Updates"> -->
+                              <h4 id="Responding%20to%20Location%20Updates" class="section-name">
+                                Responding to Location Updates
+                                <!-- <span class="anchor-icon"></span> -->
+                              </h4>
+                            <!-- </a> -->
+                          </div>
+                          <ul class="item-container" style="margin-left: 0;">
+                            <li class="item">
+                              <div>
+                                <h4>-locationManager:didUpdateLocations:</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManagerDelegate(im)locationManager:didUpdateLocations:"></a>
+                                <a name="//apple_ref/objc/Method/-locationManager:didUpdateLocations:" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManagerDelegate(im)locationManager:didUpdateLocations:"><span class="token-name">-locationManager:didUpdateLocations:</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Notifies the delegate with the new location data.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">locationManager</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">manager</span>
+                 <span class="nf">didUpdateLocations</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">CLLocation</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">locations</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></span><span class="p">,</span> <span class="n">didUpdate</span> <span class="nv">locations</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocation</span><span class="p">])</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h4>Parameters</h4>
+                                    <table class="graybox">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              manager
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>The location manager reporting the update.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              locations
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>An array of <code>CLLocation</code> objects in chronological order,
+            with the last object representing the most recent location. This array
+            contains multiple <code>CLLocation</code> objects when <code><a href="../Classes/MGLMapView.html">MGLMapView</a></code> uses  its
+            default location manager.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L188-L189">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="task-group">
+                          <div class="task-name-container">
+                            <a name="/Responding%20to%20Heading%20Updates"></a>
+                            <a name="//apple_ref/objc/Section/Responding to Heading Updates" class="dashAnchor"></a>
+                            <!-- <a href="#/Responding%20to%20Heading%20Updates"> -->
+                              <h4 id="Responding%20to%20Heading%20Updates" class="section-name">Responding to Heading Updates
+                                <!-- <span class="anchor-icon"></span> -->
+                              </h4>
+                            <!-- </a> -->
+                          </div>
+                          <ul class="item-container" style="margin-left: 0;">
+                            <li class="item">
+                              <div>
+                                <h4>-locationManager:didUpdateHeading:</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManagerDelegate(im)locationManager:didUpdateHeading:"></a>
+                                <a name="//apple_ref/objc/Method/-locationManager:didUpdateHeading:" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManagerDelegate(im)locationManager:didUpdateHeading:"><span class="token-name">-locationManager:didUpdateHeading:</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Notifies the delegate with the new heading data.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">locationManager</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">manager</span>
+                   <span class="nf">didUpdateHeading</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">CLHeading</span> <span class="o">*</span><span class="p">)</span><span class="nv">newHeading</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></span><span class="p">,</span> <span class="n">didUpdate</span> <span class="nv">newHeading</span><span class="p">:</span> <span class="kt">CLHeading</span><span class="p">)</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h4>Parameters</h4>
+                                    <table class="graybox">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              manager
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>The location manager reporting the update.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              newHeading
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>The new heading update.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L199-L200">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-locationManagerShouldDisplayHeadingCalibration:</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManagerDelegate(im)locationManagerShouldDisplayHeadingCalibration:"></a>
+                                <a name="//apple_ref/objc/Method/-locationManagerShouldDisplayHeadingCalibration:" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManagerDelegate(im)locationManagerShouldDisplayHeadingCalibration:"><span class="token-name">-locationManagerShouldDisplayHeadingCalibration:</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Asks the delegate if the calibration alert should be displayed.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">locationManagerShouldDisplayHeadingCalibration</span><span class="p">:</span>
+                <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">manager</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManagerShouldDisplayHeadingCalibration</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h4>Parameters</h4>
+                                    <table class="graybox">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              manager
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>The location manager reporting the calibration.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L207">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="task-group">
+                          <div class="task-name-container">
+                            <a name="/Responding%20to%20Location%20Updates%20Errors"></a>
+                            <a name="//apple_ref/objc/Section/Responding to Location Updates Errors" class="dashAnchor"></a>
+                            <!-- <a href="#/Responding%20to%20Location%20Updates%20Errors"> -->
+                              <h4 id="Responding%20to%20Location%20Updates%20Errors" class="section-name">
+                                Responding to Location Updates Errors
+                                <!-- <span class="anchor-icon"></span> -->
+                              </h4>
+                            <!-- </a> -->
+                          </div>
+                          <ul class="item-container" style="margin-left: 0;">
+                            <li class="item">
+                              <div>
+                                <h4>-locationManager:didFailWithError:</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManagerDelegate(im)locationManager:didFailWithError:"></a>
+                                <a name="//apple_ref/objc/Method/-locationManager:didFailWithError:" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManagerDelegate(im)locationManager:didFailWithError:"><span class="token-name">-locationManager:didFailWithError:</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Notifies the delegate that the location manager was unable to retrieve
+            location updates.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">locationManager</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">manager</span>
+                   <span class="nf">didFailWithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></span><span class="p">,</span> <span class="n">didFailWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h4>Parameters</h4>
+                                    <table class="graybox">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              manager
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>The location manager reporting the error.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              error
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>An error object containing the error code that indicates
+            why the location manager failed.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L219-L220">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item">
+                              <div>
+                                <h4>-locationManagerDidChangeAuthorization:</h4>
+                                <!-- <code>
+                                <a name="/c:objc(pl)MGLLocationManagerDelegate(im)locationManagerDidChangeAuthorization:"></a>
+                                <a name="//apple_ref/objc/Method/-locationManagerDidChangeAuthorization:" class="dashAnchor"></a>
+                                <a class="token" href="#/c:objc(pl)MGLLocationManagerDelegate(im)locationManagerDidChangeAuthorization:"><span class="token-name">-locationManagerDidChangeAuthorization:</span><span class="token-icon"></span></a>
+                                </code> -->
+                              </div>
+                              <div class="height-container" style="display: block;">
+                                <div class="">
+                                  <div class="abstract">
+                                    <p>Notifies the delegate that the location authorization status has changed.</p>
+            
+                                  </div>
+                                  <div class="declaration">
+                                    <h4>Declaration</h4>
+                                    <div class="language keyline-blue">
+                                      <p style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                                      <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">locationManagerDidChangeAuthorization</span><span class="p">:</span>
+                <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">manager</span><span class="p">;</span></code></pre>
+            
+                                    </div>
+                                    <div class="language keyline-purple">
+                                      <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                                      <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManagerDidChangeAuthorization</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MGLLocationManager.html">MGLLocationManager</a></span><span class="p">)</span></code></pre>
+            
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h4>Parameters</h4>
+                                    <table class="graybox">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <code>
+                                              manager
+                                            </code>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <p>The location manager reporting the change.</p>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="show-on-github">
+                                    <a href="https://github.com/mapbox/mapbox-gl-native-ios/tree/ios-v5.12.2/platform/darwin/src/MGLLocationManager.h#L227">
+                                      <img style="margin-bottom: 1px;" class="show-on-github-icon" src="../img/github.svg">
+                                      View Source on GitHub
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+            
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <section class="footer limiter">
+    <p><a class="link" href="https://github.com/maplibre/maplibre-gl-native/blob/main/platform/ios/LICENSE.md"
+        target="_blank" rel="external noopener">License</a></p> Generated by <a class="link"
+      href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.3</a>, a <a class="link"
+      href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+  </section> -->
+</body>
+
+
+</html>
+
+
+
+
+
+
