@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mapbox Reference</title>
+
+  <meta charset="utf-8">
+  <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/jquery.min.js" defer></script>
+  <script src="js/jazzy.js" defer></script>
+  <script src="js/common.js" defer></script>
+
+  <script src="js/lunr.min.js" defer></script>
+  <script src="js/typeahead.jquery.js" defer></script>
+  <script src="js/jazzy.search.js" defer></script>
+  <meta class="swiftype" name="type" data-type="enum" content="Mapbox Reference" />
+  <meta class="swiftype" name="title" data-type="string" content="Mapbox" />
+  <style type="text/css">
+    .nav-group-name[data-name="Mapbox"]>.small-heading,
+    .nav-group-task[data-name="Mapbox"] {
+      background-color: #f5f8fc;
+      font-family: "Open Sans Bold";
+      border-left: 3px solid #3a68d8;
+      padding-left: 5px
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <a title="Mapbox  Reference"></a>
+
+  <header class="header-container">
+    <div class="limiter">
+      <div class="header">
+        <p class="header-col header-col--primary">
+          <a class="header-link" href="index.html">
+            <!--            <img style="height: 25px;"  class="header-icon" src="https://2nm493.n3cdn1.secureserver.net/wp-content/uploads/2021/04/UNL-logo-new_white.png?time=1671101468" alt="Mapbox Docs"/>-->
+            <img style="height: 25px;" class="header-icon"
+              src="https://2nm493.n3cdn1.secureserver.net/wp-content/uploads/2021/04/UNL-logo-new_white.png?time=1671101468"
+              alt="Mapbox Docs" />
+            <!-- https://2nm493.n3cdn1.secureserver.net/wp-content/uploads/2021/04/UNL-logo-new_white.png?time=1671101468 -->
+            <span class='header-tag'>UNL Maps SDK for iOS Reference</span>
+          </a>
+
+        </p>
+
+      </div>
+    </div>
+  </header>
+
+
+
+  <div class="content-wrapper limiter">
+
+    <nav class="navigation pe12-mm">
+      <div class="mb6 border-b border--darken10">
+        <div class="mb6">
+          <div class="dr-ui--product-menu">
+            <a href="#" class="txt-fancy txt-l block color-blue-on-hover">UNL iOS Sdk
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-col--secondary py12-mm">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead
+            class="w-full mb-0 bg-transparent border-4">
+        </form>
+      </div>
+      <ul class="nav-groups">
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full "
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 txt-17 color-darken75" href="index.html">Getting
+            Started</a>
+        </li>
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17  color-darken75"
+            href="authentication.html">AUTHENTICATION</a>
+        </li>
+        <li class="nav-group-name py3-mm txt-uppercase txt-fancy round-full w-full" data-name="Appendices">
+          <div
+            class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main txt-17  bg-blue-faint"
+            id="api-ref">
+            <a href="api-references.html" class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm">API
+              Reference</a>
+            <button class="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+              aria-label="Toggle API Reference menu" aria-controls="menu-api-reference" aria-expanded="true">
+              <img src="./img/arrow-down.png" height="12px" />
+            </button>
+          </div>
+          <ul id="menu-drop-list" class="nav-group-tasks px12 py3-mm txt-fancy txt-17 txt-l menu-drop-list"  style="display:block">
+            <li class="nav-group-task" data-name="Appendices" data-url="Appendices.html">
+              <a title="Appendices" class="nav-group-task-link color-darken75 color-blue-on-hover "
+                href="Appendices.html" style="margin-left: 5px;">Custom Package <img src="./img/arrow-down.png"
+                  height="12px" /></a>
+              <ul id="menu-drop-list" class="nav-group-tasks px12 py3-mm txt-fancy txt-17 txt-l menu-drop-list"
+               >
+                <li class="nav-group-task" data-name="Appendices" data-url="Appendices.html">
+                  <a title="Appendices" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Appendices.html">Appendices</a>
+                </li>
+                <li class="nav-group-task" data-name="Maps" data-url="Maps.html">
+                  <a title="Working with GeoJSON Data" class="nav-group-task-link color-darken50 color-blue-on-hover"
+                    href="Maps.html">Maps</a>
+                </li>
+                <li class="nav-group-task" data-name="Primitive Shapes" data-url="primitive-shape.html">
+                  <a title="Primitive Shapes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="primitive-shape.html">Primitive Shapes</a>
+                </li>
+                <li class="nav-group-task" data-name="Annotations" data-url="Annotations.html">
+                  <a title="Annotations" class="nav-group-task-link color-blue color-blue-on-hover "
+                    href="Annotations.html">Annotations</a>
+                </li>
+                <li class="nav-group-task" data-name="User Interaction" data-url="User-Interaction.html">
+                  <a title="User Interaction" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="User-Interaction.html">User Interaction</a>
+                </li>
+                <li class="nav-group-task" data-name="Location Updates" data-url="Location-Updates.html">
+                  <a title="Location Updates" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Location-Updates.html">Location Updates</a>
+                </li>
+                <li class="nav-group-task" data-name="Styling the Map" data-url="Styling The Map.html">
+                  <a title="Styling the Map" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Styling The Map.html">Styling the Map</a>
+                </li>
+                <li class="nav-group-task" data-name="Style Primitives" data-url="Style Primitives.html">
+                  <a title="Style Primitives" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Style Primitives.html">Style Primitives</a>
+                </li>
+                <li class="nav-group-task" data-name="Style Content" data-url="Style Content.html">
+                  <a title="Style Content" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Style Content.html">Style Content</a>
+                </li>
+                <li class="nav-group-task" data-name="Style Layers" data-url="Style Layers.html">
+                  <a title="Style Layers" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Style Layers.html">Style Layers</a>
+                </li>
+                <li class="nav-group-task" data-name="Offline Maps" data-url="Offline Maps.html">
+                  <a title="Offline Maps" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Offline Maps.html">Offline Maps</a>
+                </li>
+                <li class="nav-group-task" data-name="Geometry" data-url="Geometry.html">
+                  <a title="Geometry" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Geometry.html">Geometry</a>
+                </li>
+                <li class="nav-group-task" data-name="Formatters" data-url="Formatters.html">
+                  <a title="Formatters" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Formatters.html">Formatters</a>
+                </li>
+                <li class="nav-group-task" data-name="Other Categories" data-url="Other Categories.html">
+                  <a title="Other Categories" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Other Categories.html">Other Categories</a>
+                </li>
+                <li class="nav-group-task" data-name="Other Classes" data-url="Other Classes.html">
+                  <a title="Other Classes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Other Classes.html">Other Classes</a>
+                </li>
+                <li class="nav-group-task" data-name="Other Constants" data-url="Other Constants.html">
+                  <a title="Other Constants" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Other Constants.html">Other Constants</a>
+                </li>
+                <li class="nav-group-task" data-name="Other Enumerations" data-url="Other Enums.html">
+                  <a title="Other Enumerations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Other Enums.html">Other Enumerations</a>
+                </li>
+                <li class="nav-group-task" data-name="Other Protocols" data-url="Other Protocols.html">
+                  <a title="Other Protocols" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Other Protocols.html">Other Protocols</a>
+                </li>
+                <li class="nav-group-task" data-name="Other Type Definitions" data-url="Other Type Definitions.html">
+                  <a title="Other Type Definitions" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Other Type Definitions.html">Other Type Definitions</a>
+                </li>
+                <li class="nav-group-task" data-name="Other Functions" data-url="Other Functions.html">
+                  <a title="Other Functions" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Other Functions.html">Other Functions</a>
+                </li>
+                <li class="nav-group-task" data-name="Other Structures" data-url="Other Structs.html">
+                  <a title="Other Structures" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Other Structs.html">Other Structures</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-task" data-name="classes" data-url="Classes.html">
+              <a title="Classes" class="nav-group-task-link color-darken75 color-blue-on-hover " href="Classes.html"
+                style="margin-left: 5px;">Core Package <img src="./img/arrow-down.png" height="12px" /></a>
+              <ul id="menu-drop-list" class="nav-group-tasks px12 py3-mm txt-fancy txt-17 txt-l menu-drop-list">
+
+                <li class="nav-group-task" data-name="Classes" data-url="Classes.html">
+                  <a title="Classes" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Classes.html">Classes</a>
+                </li>
+                <li class="nav-group-task" data-name="Enumerations" data-url="Enums.html">
+                  <a title="Enumerations" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Enums.html">Enumerations</a>
+                </li>
+                <li class="nav-group-task" data-name="Protocols" data-url="Protocols.html">
+                  <a title="Protocols" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Protocols.html">Protocols</a>
+                </li>
+                <li class="nav-group-task" data-name="Structures" data-url="Structs.html">
+                  <a title="Structures" class="nav-group-task-link color-darken50 color-blue-on-hover "
+                    href="Structs.html">Structures</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+
+        </li>
+        <!-- <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+                data-name="Getting started">
+                <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 color-darken75" href="#">UNL
+                  Plugins</a>
+              </li> -->
+        <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
+          data-name="Getting started">
+          <a class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm txt-17 color-darken75"
+            href="examples.html">Examples</a>
+        </li>
+
+
+      </ul>
+    </nav>
+
+    <article class="main-content">
+      <div class="breadcrumbs bg-transparent pb-12 pt-3 border-0">
+        <div class="limiter">
+          <a class="breadcrumb link" href="index.html">UNL iOS Sdk</a>
+          <img class="carat" src="img/carat.png" />
+          <span class="breadcrumb color-gray none inline-block-mm">API REFERENCE</span>
+        </div>
+      </div>
+      <section class="section" id="docs-content">
+        <div class="section-content">
+          <div class="col prose col--8-mxl col--12">
+            <h1 class="txt-fancy">API REFERENCE</h1>
+          </div>
+
+          <div class="grid grid--gut60 ">
+
+
+            <div class="col col--12 prose">
+              <div>
+
+                <h2 id="custom-controls" style="font-size: 20px; font-weight: 600;">
+                  Custom controls
+                </h2>
+                <p style="padding-bottom: 20px;">
+                  For Custom controls, it can be accessed by assigning a
+                  class <code>UNLMapView</code>. For Example:
+                </p>
+                <pre class="language-kotlin" tabindex="0"><code class="language-kotlin">   <span class="token keyword">var</span> mapView<span class="token operator">:</span> UnlMapView
+                                                         </code></pre>
+                <h4 id="grid-controls">Grid Controls</h4>
+                <p>
+                  Grid controls can be enabled in your activity
+                  initialisation by passing the
+                  <code>setGridControls</code> second param as
+                  <code>true</code>. With this approach, the grid
+                  control will be initialised with the default options.
+                </p>
+                <p>
+                  the following options can be specified during the
+                  <code>GridControl</code> initialisation:
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Option</th>
+                      <th>Type</th>
+                      <th>Default</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>defaultPrecision</td>
+                      <td><code>CellPrecision</code></td>
+                      <td>9</td>
+                      <td>
+                        Default precision of the cells. It can be
+                        changed manually via the grid selector
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>lineColor</td>
+                      <td><code>ResourceColor</code></td>
+                      <td>default_grid_line_color</td>
+                      <td>Grid line's colour</td>
+                    </tr>
+                    <tr>
+                      <td>lineWidth</td>
+                      <td><code>Float </code></td>
+                      <td>1f</td>
+                      <td>Grid line's width</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  If GridControl is enabled, the grid lines will be
+                  generated at certain zoom levels, dependant on the
+                  selected precision, according to the following table:
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Precision</th>
+                      <th>Zoom level</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>18</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>16</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>14</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 id="tiles-selector">
+                  Tiles selector
+                </h4>
+                <p>
+                  Tile selector can be enabled in your activity,
+                  initialisation by passing the
+                  <code>enableTileSelector</code> param
+                  <code>true</code>. With this approach, the tile
+                  selector control will be initialised with the default
+                  options.
+                </p>
+                <p>
+                  the following options can be specified during the
+                  <code>TilesSelectorControl</code> initialisation:
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Option</th>
+                      <th>Type</th>
+                      <th>Default</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>tile</td>
+                      <td>[Enum]</td>
+                      <td>TERRAIN, VECTORIAL,BASE,TRAFFIC,SATELLITE</td>
+                      <td>
+                        The options that will be included in the tiles
+                        selector
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 id="custom-tile-selector">Custom tile selector</h4>
+                <p>
+                  <code>UnlMapView</code> also provide access to use
+                  custom tile selecter with the following function:
+                </p>
+                <h4 id="method-loadstyle">
+                  <code>Method loadStyle</code>
+                </h4>
+                <p>
+                  This method takes a <code>TileEnum</code> parameter
+                  and updates the selected tile from the map.
+                </p>
+                <p>
+                  The supported TileEnum values are:
+                  <code>TERRAIN</code>, <code>VECTORIAL</code>,
+                  <code>BASE</code>, <code>TRAFFIC</code>,
+                  <code>SATELLITE</code>.
+                </p>
+                <p>Example</p>
+                <pre class="language-kotlin" tabindex="0"><code class="language-kotlin">
+                                                         unlMap<span class="token punctuation">.</span><span class="token function">loadStyle</span><span class="token punctuation">(</span>TileEnum<span class="token punctuation">.</span>BASE<span class="token punctuation">)</span>
+                                                         </code></pre>
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+    </article>
+  </div>
+  <!-- <section class="footer limiter">
+        <p><a class="link" href="https://github.com/maplibre/maplibre-gl-native/blob/main/platform/ios/LICENSE.md"
+                target="_blank" rel="external noopener">License</a></p> Generated by <a class="link"
+            href="https://github.com/realm/jazzy" target="_blank" rel="external">abc</a>, a <a class="link"
+            href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+    </section> -->
+</body>
+</div>
+
+</html>

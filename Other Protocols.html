@@ -88,7 +88,7 @@
           <div
             class="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main txt-17 bg-blue-faint color-blue"
             id="api-ref">
-            <a href="Appendices.html" class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm">API
+            <a href="api-references.html" class="flex-child flex-child--grow color-blue-on-hover py6 py3-mm">API
               Reference</a>
             <button class="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
               aria-label="Toggle API Reference menu" aria-controls="menu-api-reference" aria-expanded="true">
@@ -98,15 +98,20 @@
           <ul id="menu-drop-list" class="nav-group-tasks px12 py3-mm txt-fancy txt-17 txt-l menu-drop-list"
             style="display:block">
             <li class="nav-group-task" data-name="Appendices" data-url="Appendices.html">
+              <a title="Appendices" class="nav-group-task-link color-blue color-blue-on-hover " href="Appendices.html"
+                style="margin-left: 5px;">Custom Package <img src="./img/arrow-down.png" height="12px" /></a>
+                <ul id="menu-drop-list" class="nav-group-tasks px12 py3-mm txt-fancy txt-17 txt-l menu-drop-list"
+            style="display:block">
+            <li class="nav-group-task" data-name="Appendices" data-url="Appendices.html">
               <a title="Appendices" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="Appendices.html">Appendices</a>
             </li>
             <li class="nav-group-task" data-name="Maps" data-url="Maps.html">
-              <a title="Working with GeoJSON Data" class="av-group-task-link color-blue color-darken50 color-blue-on-hover"
+              <a title="Working with GeoJSON Data" class="nav-group-task-link color-darken50 color-blue-on-hover"
                 href="Maps.html">Maps</a>
             </li>
             <li class="nav-group-task" data-name="Primitive Shapes" data-url="primitive-shape.html">
-              <a title="Primitive Shapes" class="nav-group-task-link color-blue color-darken50 color-blue-on-hover "
+              <a title="Primitive Shapes" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="primitive-shape.html">Primitive Shapes</a>
             </li>
             <li class="nav-group-task" data-name="Annotations" data-url="Annotations.html">
@@ -121,13 +126,13 @@
               <a title="Location Updates" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="Location-Updates.html">Location Updates</a>
             </li>
-            <li class="nav-group-task" data-name="Styling the Map" data-url="customizing-fonts.html">
+            <li class="nav-group-task" data-name="Styling the Map" data-url="Styling The Map.html">
               <a title="Styling the Map" class="nav-group-task-link color-darken50 color-blue-on-hover "
-                href="customizing-fonts.html">Styling the Map</a>
+                href="Styling The Map.html">Styling the Map</a>
             </li>
-            <li class="nav-group-task" data-name="Style Primitives" data-url="infoplist-keys.html">
+            <li class="nav-group-task" data-name="Style Primitives" data-url="Style Primitives.html">
               <a title="Style Primitives" class="nav-group-task-link color-darken50 color-blue-on-hover "
-                href="infoplist-keys.html">Style Primitives</a>
+                href="Style Primitives.html">Style Primitives</a>
             </li>
             <li class="nav-group-task" data-name="Style Content" data-url="Style Content.html">
               <a title="Style Content" class="nav-group-task-link color-darken50 color-blue-on-hover "
@@ -157,11 +162,11 @@
               <a title="Other Classes" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="Other Classes.html">Other Classes</a>
             </li>
-            <li class="nav-group-task" data-name="Other Constants" data-url="gesture-recognizers.html">
+            <li class="nav-group-task" data-name="Other Constants" data-url="Other Constants.html">
               <a title="Other Constants" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="Other Constants.html">Other Constants</a>
             </li>
-            <li class="nav-group-task" data-name="Other Enumerations" data-url="gesture-recognizers.html">
+            <li class="nav-group-task" data-name="Other Enumerations" data-url="Other Enums.html">
               <a title="Other Enumerations" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="Other Enums.html">Other Enumerations</a>
             </li>
@@ -169,7 +174,7 @@
               <a title="Other Protocols" class="nav-group-task-link color-blue color-blue-on-hover "
                 href="Other Protocols.html">Other Protocols</a>
             </li>
-            <li class="nav-group-task" data-name="Other Type Definitions" data-url="gesture-recognizers.html">
+            <li class="nav-group-task" data-name="Other Type Definitions" data-url="Other Type Definitions.html">
               <a title="Other Type Definitions" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="Other Type Definitions.html">Other Type Definitions</a>
             </li>
@@ -181,6 +186,15 @@
               <a title="Other Structures" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="Other Structs.html">Other Structures</a>
             </li>
+          </ul>
+          </li>
+          <li class="nav-group-task" data-name="Appendices" data-url="Classes.html">
+              <a title="Classes" class="nav-group-task-link color-darken75 color-blue-on-hover "
+                href="Classes.html" style="margin-left: 5px;">Core Package <img src="./img/arrow-down.png"
+                  height="12px" /></a>
+            <ul id="menu-drop-list" class="nav-group-tasks px12 py3-mm txt-fancy txt-17 txt-l menu-drop-list"
+           >
+            
             <li class="nav-group-task" data-name="Classes" data-url="Classes.html">
               <a title="Classes" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="Classes.html">Classes</a>
@@ -193,11 +207,14 @@
               <a title="Protocols" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="Protocols.html">Protocols</a>
             </li>
-            <li class="nav-group-task" data-name="Structures" data-url="gesture-recognizers.html">
+            <li class="nav-group-task" data-name="Structures" data-url="Structs.html">
               <a title="Structures" class="nav-group-task-link color-darken50 color-blue-on-hover "
                 href="Structs.html">Structures</a>
             </li>
           </ul>
+          </li>
+          </ul>
+      
 
         </li>
         <!-- <li class="nav-group-name px12 py3-mm flex-parent txt-uppercase txt-fancy round-full w-full"
@@ -238,7 +255,7 @@
                 <nav aria-labelledby="on-this-page" class="dr-ui--on-this-page mb36-mxl mb18">
                   <h2 id="on-this-page" class="unprose txt-m txt-bold mb6">On this page</h2>
                   <ul class="scrollitem">
-                    <li class="mb3 mb6-mxl"><a href="#MGLCluster" class="link inline-block link--blue"
+                    <li class="mb3 mb6-mxl"><a href="#MGLCluster" class="link inline-block link--gray"
                         style="word-break: break-word;">MGLCluster</a></li>
 
                     <li class="mb3 mb6-mxl"><a href="#MGLComputedShapeSourceDataSource"
